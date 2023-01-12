@@ -1,0 +1,280 @@
+.header{
+    background: #FFF8F3;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-image: url('../images/header_bg.png');
+   
+}
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+.text-primary{
+    color: #FD6E0A;
+}
+.btn-primary{
+    height: 64px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: 0px;
+    padding: 18px 35px;
+}
+
+.btn-contact{
+    color: #FD6E0A;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px ;
+    border: 2px solid #FD6E0A;
+    padding: 17px 33px;
+    margin-left: 30px;
+
+}
+/* header and navigation style */
+.nav-title{
+    font-weight: 800px;
+    font-size: 45px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav li{
+    list-style: none;
+    margin-left: 50px;
+}
+
+/* banner style */
+.banner{
+    display: flex;
+    align-items: center;
+    margin: 0 200px;
+}
+.banner-title{
+    font-weight: 700;
+    font-size: 85px;
+}
+.banner-sub-title{
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 45px;
+
+}
+.banner-paragraph{
+    margin-top: 20px;
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* main style */
+main{
+    max-width: 1140px;
+   margin: 0 auto;
+}
+
+/* about section style */
+.about{
+    text-align: center;
+    margin-top: 130px;
+    background: #FFF8F3;
+    padding: 130px 150px;
+    border-radius: 10px;
+
+    
+
+}
+.about-me{
+    
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    
+
+}
+.about-paragraph{
+    color: #757575;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+}
+
+.about-info-container{
+    display: flex;
+    justify-content: space-around;
+}
+/* .about-info{
+    
+} */
+.font-title{
+    color: #757575;
+    font-size: 20px;
+
+}
+.font-description{
+    color: #474747;
+    font-weight: 700;
+    font-size: 20px;
+
+}
+
+
+/* what i do style */
+.section-title{
+    margin-top: 130px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.skill-title{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.skills-container{
+    display: flex;
+    gap: 24px;
+}
+.skill{
+    background: #FFFFFF;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 30px;
+}
+
+/* resume section style */
+
+.section-title{
+    font-weight: 700;
+    font-size: 35px;
+    color: #181818;
+
+
+}
+
+.resume-content{
+    display: flex;
+    gap: 24px;
+}
+.resume-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.resume-title{
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 30px;
+   
+}
+.title{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 25px;
+
+
+}
+.resume .sub-title{
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #757575;
+
+}
+.resume .description{
+    font-weight: 400;
+    font-size: 16px;
+    color: #757575;
+    
+}
+.resume-btn{
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+/* contact footer style */
+.contact{
+    display: flex;
+    gap: 100px;
+    background: #FFF8F3;
+    padding: 130px 200px;
+}
+.contact .section-title{
+    text-align: left;
+}
+.contact ,input[type="name"], textarea{
+    margin-bottom: 24px;
+    border: 0px;
+    width: 100%;
+    padding: 18px 30px;
+}
+input{
+    height: 20px;
+}
+.contact a{
+    text-decoration: none;
+}
+
+/* Responsive side ber */
+
+@media screen and (max-width: 576px) {
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav,
+    .banner, 
+    .skills-container,
+     .resume-content, 
+     .about-info-container, 
+     .contact{
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px 20px;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .about, .contact{
+        padding: 20px;
+    }
+    .contact ,input[type="name"], textarea{
+        padding: 0 0 0 10px;
+    }
+
+    
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+
+    .about, .contact{
+        padding: 20px;
+        /* gap: 10px; */
+    }
+    .contact{
+        flex-direction: column;
+    }
+    .contact ,input[type="name"], textarea{
+        padding: 0 0 0 10px;
+    }
+    
+    
+}
+.hide{
+    display: none;
+}
