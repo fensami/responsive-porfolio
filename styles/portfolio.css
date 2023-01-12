@@ -213,10 +213,10 @@ main{
     text-align: left;
 }
 .contact ,input[type="name"], textarea{
-    margin-bottom: 24px;
+    margin: 10px 0 24px 0;
     border: 0px;
-    width: 100%;
-    padding: 18px 30px;
+    /* width: 100%; */
+    /* padding: 18px 30px; */
 }
 input{
     height: 20px;
@@ -249,7 +249,18 @@ input{
     }
     nav ul{
         flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        padding-left: 20px;
+        position: relative;
+        right:48px ;
+        
     }
+    /* nav li{
+        flex-direction: column;
+        
+        
+    } */
     .about, .contact{
         padding: 20px;
     }
