@@ -133,6 +133,12 @@ main{
     text-align: center;
     margin-bottom: 50px;
 }
+.what-i-do-paragraph{
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 25px;
+    
+}
 
 .skill-title{
     font-weight: 700;
@@ -207,13 +213,13 @@ main{
     display: flex;
     gap: 100px;
     background: #FFF8F3;
-    padding: 130px 200px;
+    padding: 0px 200px;
 }
 .contact .section-title{
     text-align: left;
 }
 .contact ,input[type="name"], textarea{
-    margin: 10px 0 24px 0;
+    /* margin: 10px 0 24px 0; */
     border: 0px;
     /* width: 100%; */
     /* padding: 18px 30px; */
@@ -228,15 +234,6 @@ input{
 /* Responsive side ber */
 
 @media screen and (max-width: 576px) {
-    .header{
-        background-image: none;
-    }
-    .banner{
-        margin: 0 20px;
-    }
-    .banner img{
-        width: 100%;
-    }
     nav,
     .banner, 
     .skills-container,
@@ -255,6 +252,27 @@ input{
         position: relative;
         right:48px ;
         
+    }
+    .what-i-do-paragraph{
+        /* font-weight: 600;
+        font-size: 15px; */
+        margin-left: 25px;
+        
+    }
+    .header{
+        background-image: none;
+    }
+    .banner{
+        margin: 0 20px;
+    }
+    .banner img{
+        width: 100%;
+    }
+    
+    .font-description {
+        color: #474747;
+        font-weight: 700;
+        font-size: 15px;
     }
     /* nav li{
         flex-direction: column;
@@ -277,6 +295,7 @@ input{
         padding: 20px;
         /* gap: 10px; */
     }
+   
     .contact{
         flex-direction: column;
     }
